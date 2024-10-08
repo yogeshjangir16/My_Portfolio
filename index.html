@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/image.png" alt="Yogesh Jangir" width="80">
+        </figure>
+      
+        <div class="info-content">
+          <h1 class="name" title="Yogesh Jangir">Yogesh Jangir</h1>
+          <p class="title">
+            <span id="dynamic-text">I'm a Software Engineer</span>
+          </p>
+        </div>
+      
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jangir.7@iitj.ac.in" class="contact-link">jangir.7@iitj.ac.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919660201043" class="contact-link">+91 9660201043</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-09-05">5 September, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sikar, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/yogesh-jangir-48a42b247/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/yogeshjangir16" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/yogesh_jangir002/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m Yogesh Jangir, a Software Engineer and Web Developer currently pursuing my B.Tech in Computer Science &
+            Engineering at IIT Jodhpur. With a strong foundation in programming and a passion for machine learning, I
+            enjoy building intuitive and functional web applications.
+          </p>
+
+          <p>
+            My goal is to create impactful solutions that blend technical efficiency with user-friendly design. I thrive
+            on solving complex problems and continuously seek to learn and grow in the ever-evolving tech landscape.
+          </p>
+        </section>
+
+
+
+
+        <!--
+          - service
+        -->
+        <section class="service">
+
+          <h3 class="h3 service-title">What I Offer</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design</h4>
+                <p class="service-item-text">
+                  Creating modern and user-centric designs that enhance user experience and engagement.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Crafting high-quality, responsive websites using modern technologies like HTML, CSS, and JavaScript,
+                  tailored to enhance user experience.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+                <p class="service-item-text">
+                  Developing machine learning models for data analysis and predictions, utilizing frameworks like
+                  PyTorch and TensorFlow to provide intelligent solutions.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/database.png" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management</h4>
+                <p class="service-item-text">
+                  Designing and implementing efficient database systems using SQL, ensuring data integrity and optimal
+                  performance for applications.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+      </article>
+
+
+
+
+
+<!--
+  - #RESUME
+-->
+
+<article class="resume" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- Education Section -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">IIT Jodhpur</h4>
+        <span>2021 — 2025</span>
+        <p class="timeline-text">
+          Pursuing B.Tech in Computer Science & Engineering, focusing on programming, machine learning, and software development.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Goenkya Public School</h4>
+        <span>2020</span>
+        <p class="timeline-text">
+          Completed Class XII with 89.60%, RBSE Board, demonstrating a strong academic foundation.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Goenkya Public School</h4>
+        <span>2018</span>
+        <p class="timeline-text">
+          Completed Class X with 94.83%, RBSE Board, achieving excellence in academics.
+        </p>
+      </li>
+    </ol>
+
+  </section>
+
+  <!-- Coursework Section -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Coursework</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Data Structures and Algorithms</h4>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Database Management Systems</h4>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Operating Systems</h4>
+      </li>
+      
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Software Engineering</h4>
+      </li>
+      
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Deep Learning</h4>
+      </li>
+
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Computer Vision</h4>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Cyber Security</h4>
+      </li>
+
+    </ol>
+    <section class="skill">
+
+      <h3 class="h3 skills-title">My Skills</h3>
+    
+      <div class="skills-grid">
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">C/C++</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">Python</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">HTML & CSS</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">JavaScript & React</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">Machine Learning</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">Database Management</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">Git & GitHub</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">Flask & Django</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">TensorFlow & PyTorch</h5>
+          </div>
+        </div>
+    
+        <div class="skills-item">
+          <div class="skills-box">
+            <h5 class="h5">SQL & Databases</h5>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section class="resume-download">
+  <a href="./assets/images/Resume.pdf" download="My_Resume.pdf" class="btn download-btn">
+    Download Resume
+  </a>
+</section>
+</article>
+
+<!-- Add the following CSS to style the boxes -->
+<style>
+  .h3.skills-title {
+    margin-top: 40px; /* Add margin-top */
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .skills-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .skills-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  .btn.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0088ff;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+  
+  .btn.download-btn:hover {
+    background-color: #60f058;
+  }
+  
+</style>      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+      
+          <ul class="filter-list">
+      
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+      
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+      
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+      
+            <li class="filter-item">
+              <button data-filter-btn>Database</button>
+            </li>
+      
+            <li class="filter-item">
+              <button data-filter-btn>Others</button>
+            </li>
+      
+          </ul>
+      
+          <div class="filter-select-box">
+      
+            <button class="filter-select" data-select>
+      
+              <div class="select-value" data-selecct-value>Select category</div>
+      
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+      
+            </button>
+      
+            <ul class="select-list">
+      
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+      
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+      
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+      
+              <li class="select-item">
+                <button data-select-item>Database</button>
+              </li>
+      
+              <li class="select-item">
+                <button data-select-item>Others</button>
+              </li>
+      
+            </ul>
+      
+          </div>
+      
+          <ul class="project-list">
+      
+            <li class="project-item active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/yogeshjangir16/CV_Final_Project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/my_project1.jpg" alt="OCR: Handwritten Text Recognition" loading="lazy">
+                </figure>
+                <h3 class="project-title">OCR: Handwritten Text Recognition</h3>
+                <p class="project-category">Computer Vision</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/yogeshjangir16/Machine-Learning-Project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/my_project2.jfif" alt="Brain Stroke Prediction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Brain Stroke Prediction</h3>
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/yogeshjangir16/Country_Categorization">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/my_project3.webp" alt="Country Categorization" loading="lazy">
+                </figure>
+                <h3 class="project-title">Country Categorization</h3>
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/Shalin06/Project_Portal">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/my_project4.jfif" alt="Project Portal" loading="lazy">
+                </figure>
+                <h3 class="project-title">Project Portal</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="database">
+              <a href="https://github.com/yogeshjangir16/Database-Project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/my_project3_1.png" alt="Library Management System" loading="lazy">
+                </figure>
+                <h3 class="project-title">Library Management System</h3>
+                <p class="project-category">Database</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="https://github.com/Sivernial/ITB_A1">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/my_project6.png" alt="p2p simulation" loading="lazy">
+                </figure>
+                <h3 class="project-title">P2P Blockchain Simulation</h3>
+                <p class="project-category">BlockChain Project</p>
+              </a>
+            </li>
+      
+          </ul>
+      
+        </section>
+      
+      </article>
+      
+
+
+
+     <!--
+        - #BLOG
+-->
+
+<article class="blog" data-page="blog">
+
+  <header>
+    <h2 class="h2 article-title">Blog</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <!-- Coming Soon Message -->
+    <div class="coming-soon">
+      <h3 class="h3 coming-soon-title">Coming Soon</h3>
+    </div>
+
+  </section>
+
+</article>
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+<!-- #CONTACT -->
+<!-- #CONTACT -->
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <section class="contact-form">
+    <h3 class="h3 form-title">Get in Touch</h3>
+    <form id="contactForm" class="form" data-form>
+      <div class="input-wrapper">
+        <label for="fullname" class="sr-only">Full name</label>
+        <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+      <label for="message" class="sr-only">Your Message</label>
+      <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <button class="form-btn" type="submit" aria-label="Send Message" data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>
+
+<script type="text/javascript">
+  (function(){
+    emailjs.init("lMsZSMkLFd8bh3gSW"); // Replace 'lMsZSMkLFd8bh3gSW' with your actual user ID from EmailJS
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Show a loading message or disable the button
+    const formBtn = document.querySelector("[data-form-btn]");
+    formBtn.disabled = true;
+    formBtn.innerHTML = 'Sending...';
+
+    emailjs.sendForm('service_pdl1etp', 'template_vragilq', this)
+      .then(function() {
+        alert('Message sent successfully!');
+        formBtn.disabled = false;
+        formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+        document.getElementById('contactForm').reset(); // Reset the form after submission
+      }, function(error) {
+        alert('Failed to send message. Please try again.');
+        console.error('Error:', error);
+        formBtn.disabled = false;
+        formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+      });
+  });
+</script>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
